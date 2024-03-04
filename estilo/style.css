@@ -1,0 +1,21 @@
+/*css general de elementos*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "Cormorant Garamond", serif;
+}
+
+h2{
+    font-weight: 500;
+}
+
+h3{
+    font-weight: 300;
+}
+
+h2, h3{
+    font-family: "Lobster", sans-serif;
+}
