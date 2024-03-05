@@ -209,7 +209,12 @@ input[type="submit"]{
 }
 
 #contactos i{
+    color: #6F7302;
     font-size: 50px;
+}
+
+#contactos i:hover{
+    color: #BF604B;
 }
 
 #contactos p{
