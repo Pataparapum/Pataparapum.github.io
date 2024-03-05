@@ -21,13 +21,17 @@ h2, h3{
     font-family: "Lobster", sans-serif;
 }
 
+p{
+    text-align: justify;
+}
+
 nav{
     position: fixed;
     width: 100%;
     height: 55px;
     background-color: #6F7302;
     padding-top: 10px;
-    text-align: center;
+    text-align: start;
 }
 
 nav ul{
@@ -36,6 +40,31 @@ nav ul{
 
 nav ul li{
     padding-top: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:any-link{
+    color: #261B18;
+}
+
+a:-webkit-any-link(){
+    color: #261B18;
+}
+
+a:-moz-any-link{
+    color: #261B18;
+}
+
+a:hover{
+    color: #BF604B;
+}
+
+#logo{
+    padding-top: 0px;
+    padding-left: 12px;
 }
 
 ul{
@@ -47,6 +76,7 @@ li{
     margin-right: 10px;
 }
 
+
 /*ccs de elementos especificos*/
 #inicio{
     background-image: url("../imagenes/inicioC.png");
@@ -57,11 +87,11 @@ li{
     text-align: center;
 }
 
-#inicio section{
+#inicio div{
     padding-top: 80px;
 }
 
-#inicio section h2{
+#inicio div h2{
     font-size: 40px;
     color: #8C5637;
 }
@@ -74,8 +104,8 @@ li{
 #sobrenosotros{
     display: grid;
     grid-template-columns: 250px 1fr;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    border-bottom: 5px solid #BF604B;
+    padding: 15px 15px 15px 15px;
     background-color: #BF8C60;
 }
 
@@ -83,12 +113,91 @@ img{
     border-radius: 15px;
 }
 
+/*grid presentación*/
 #presentacion{
-    background-color: #8C5637;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 30px 60px;
+    padding: 15px;
+    padding-bottom: 15px;
+    background-color: #BF8C60;
 }
 
+#presentacion #frame{
+    grid-area: 1/3;
+}
+
+#presentacion #presentaciontext{
+    grid-column: 1/3;
+}
+
+#presentacion iframe{
+    border-radius: 15px;
+}
+
+/*Flex populares*/
 #populares{
+    background-color: #8C5637;
+    padding: 15px 15px 15px 15px;
+}
+
+#populares h2{
+    padding-bottom: 10px;
+}
+
+.cardP{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px 20px;
+}
+
+.producto{
+    height: 150px;
+    width: 250px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.producto i{
+    padding-top: 50px;
+}
+
+.producto h3{
+    padding-top: 15px;
+}
+
+.producto:hover{
+    color: #BF604B;
+}
+
+/*Bloque consultas*/
+
+#consultas{
     background-color: #BF604B;
+    padding: 15px 15px 15px 15px;
+}
+
+.itemform{
+    display: grid;
+    grid-template-columns: 150px 350px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.itemform label{
+    font-weight: 700;
+}
+
+.itemform input, .itemform textarea{
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+input[type="submit"]{
+    grid-column: 2/3;
 }
 
 #contactos{

@@ -18,64 +18,91 @@
     </head>
 
     <body>
-        <!--Menu navegación-->
-        <nav id="navegacion">
-            <ul>
-                <li>Inicio</li>
-                <li>Sobre nosotros</li>
-                <li>Nuestro trabajo</li>
-                <li>Populares</li>
-                <li>Contactos</li>
-            </ul>
-        </nav>
+        <article>
+            <!--Menu navegación-->
+            <nav id="navegacion">
+                <ul>
+                    <li id="logo"><img src="./imagenes/cafeBarrancasEscalado.jpg" alt="Cafe Barranca por Copilot"></li>
+                    <li> <a href="#inicio">inicio</a></li>
+                    <li> <a href="#sobrenosotros">Sobre nosotros</a></li>
+                    <li> <a href="#presentacion"> Nuestro trabajo</a></li>
+                    <li> <a href="#populares"> Populares</a></li>
+                    <li> <a href="#consultas"> Consultas</a></li>
+                    <li> <a href="#contactos"> Contactos</a></li>
+                </ul>
+            </nav>
 
-        <!--Bloque inicio-->
-        <article id="inicio">
-            <section>
-                <h2>Cafeba</h2>
-                <h3>Tu café a la distancia de un click</h3>
+            <!--Bloque inicio-->
+            <section id="inicio">
+                <div>
+                    <h2>Cafeba</h2>
+                    <h3>Tu café a la distancia de un click</h3>
+                </div>
+            </section>
+
+            <!--Bloque sobre nosotros-->
+            <section id="sobrenosotros">
+                <div id="nosotrosimg"><img src="./imagenes/Cafeba.jpg" alt="Logo Cafeba por copilot"></div>
+                <div id="nosotrosbody">
+                    <h2>Sobre nosotros</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minima laborum amet est minus esse magni asperiores blanditiis, aliquid totam fuga molestiae adipisci, quos modi quo temporibus! Tempore, reprehenderit error?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eveniet necessitatibus dolorem alias excepturi quas totam, quaerat porro consectetur, autem nemo consequuntur facilis assumenda odit, provident voluptates non maxime rerum?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae saepe, vero sapiente sequi itaque eum optio vitae reprehenderit sint temporibus, quo nesciunt aliquid, debitis inventore fugiat voluptatibus praesentium? Facere, odit!</p>
+                </div>
+            </section>
+
+            <!--Bloque presentación-->
+            <section id="presentacion">
+                <div id="frame"><iframe width="300" height="250" src="https://www.youtube.com/embed/op6levyiA94?si=d4SvE9hrkQKhRi6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div id="presentaciontext">
+                    <h2>Como se prepara tu pedido</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quae architecto, iste numquam est dolore odit alias quaerat eligendi, consequatur omnis aspernatur nisi porro, blanditiis laudantium unde sint velit. Facere!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias porro non voluptatem, earum, modi quos qui dolores quaerat suscipit, veritatis necessitatibus. Doloribus quod quos est, sapiente iusto inventore natus excepturi.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, nulla. Illo, rerum et! Enim numquam quas, quaerat animi dolorem reiciendis expedita soluta tempore excepturi rem quidem odit ad quo necessitatibus.</p>
+                </div>
+            </section>
+
+            <!--Bloque productos-->
+            <section id="populares">
+                <h2>Cafés más populares</h2>
+                <div class="cardP">
+                    <div class="producto">
+                        <i class="fa-solid fa-mug-saucer"></i>
+                        <h3>Café en grano</h3>
+                    </div>
+                    <div class="producto">
+                        <i class="fa-solid fa-mug-saucer"></i>
+                        <h3>Café Molido</h3>
+                    </div>
+                    <div class="producto">
+                        <i class="fa-solid fa-mug-saucer"></i>
+                        <h3>Café descafeinado</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section id="consultas">
+                <h2>Consultas</h2>
+                <h4>Escriba y envie sus dudas</h4>
+                <form action="#">
+                    <div class="itemform">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" minlength="2" maxlength="64" size="32" required>
+                    </div>
+                    <div class="itemform">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" minlength="10" maxlength="128" size="32" required>
+                    </div>
+                    <div class="itemform">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="33" rows="5"></textarea>
+                    </div>
+                    <div class="itemform">
+                        <input type="submit" name="enviar" value="Enviar">
+                    </div>
+                </form>
             </section>
         </article>
-
-        <!--Bloque sobre nosotros-->
-        <article id="sobrenosotros">
-            <div id="nosotrosimg"><img src="./imagenes/Cafeba.jpg" alt="Logo Cafeba"></div>
-            <div id="nosotrosbody">
-                <h2>Sobre nosotros</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minima laborum amet est minus esse magni asperiores blanditiis, aliquid totam fuga molestiae adipisci, quos modi quo temporibus! Tempore, reprehenderit error?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eveniet necessitatibus dolorem alias excepturi quas totam, quaerat porro consectetur, autem nemo consequuntur facilis assumenda odit, provident voluptates non maxime rerum?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae saepe, vero sapiente sequi itaque eum optio vitae reprehenderit sint temporibus, quo nesciunt aliquid, debitis inventore fugiat voluptatibus praesentium? Facere, odit!</p>
-            </div>
-        </article>
-
-        <!--Bloque presentación-->
-        <article id="presentacion">
-            <div></div>
-            <div>
-                <h2>Como se prepara tu pedido</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quae architecto, iste numquam est dolore odit alias quaerat eligendi, consequatur omnis aspernatur nisi porro, blanditiis laudantium unde sint velit. Facere!</p>
-            </div>
-        </article>
-
-        <!--Bloque productos-->
-        <article id="populares">
-            <div>
-                <h2>Cafés mas populares</h2>
-            </div>
-            <div>
-                <i class="fa-solid fa-mug-saucer"></i>
-                <h3>Café en grano</h3>
-            </div>
-            <div>
-                <i class="fa-solid fa-mug-saucer"></i>
-                <h3>Café Molido</h3>
-            </div>
-            <div>
-                <i class="fa-solid fa-mug-saucer"></i>
-                <h3>Café descafeinado</h3>
-            </div>
-        </article>
-
         <!--footer contactos-->
         <footer id="contactos">
             <div>
