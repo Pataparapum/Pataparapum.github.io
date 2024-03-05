@@ -200,6 +200,20 @@ input[type="submit"]{
     grid-column: 2/3;
 }
 
+/*Bloque contacto*/
 #contactos{
     background-color: #261B18;
+    color: #6F7302;
+    padding: 15px 15px 15px 15px;
+    text-align: center;
+}
+
+#contactos i{
+    font-size: 50px;
+}
+
+#contactos p{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
